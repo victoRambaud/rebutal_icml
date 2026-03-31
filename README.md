@@ -1,4 +1,4 @@
-# Supplementary Results: MapFormer Benchmarks
+# Supplementary Results: MapFormer on (semi) natural language
 
 We further tested MapFormer on semi-natural and natural language. To verify that the mechanism allowing the learning of cognitive maps can be extended to formal languages, we tested on Dyck-2. Dyck-n is a context-free language that tests a model's ability to handle nested dependencies, via sequences of balanced parentheses. It has been empirically proven that standard transformers fail to generalize to longer sequences and depth than those seen in training.
 
