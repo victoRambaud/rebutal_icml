@@ -11,14 +11,19 @@ MapWM shows near perfect length and depth generalization, while RoPE performance
 *Figure 1: MapWM are more robust than RoPE while sequence length extends beyond training distribution
 
 ![Depth generalization](depth.png)
-*Figure 1: MapWM are more robust than RoPE while sequence depth extends beyond training distribution
+*Figure 2: MapWM are more robust than RoPE while sequence depth extends beyond training distribution
 
 ![RoPE-1L Length/Depth](length-depthRoPE1.png)
-*Figure 1: RoPE fail to generalize to unseen depth or length
+*Figure 3: RoPE fail to generalize to unseen depth or length
 
 ![RoPE-2L Length/Depth](length-depthRoPE2.png)
-*Figure 1: RoPE fail to generalize to unseen depth or length
+*Figure 4: RoPE fail to generalize to unseen depth or length
 
 ![MapWM Length/Depth](length-depthMapWM.png)
-*Figure 1: MapWM generalize to unseen depth and length*
+*Figure 5: MapWM generalize to unseen depth and length*
 
+## 2. MapFormer scale to OpenWeb scale trainings
+We used the nanoGPT codebase to train a 12 layer, 8 heads of size 64 transformer, RoPE as baseline, and compare it with our MapFormerWM implementation. The following results demonstrate that MapFormers do scale to large-scale datasets and multi-layer setting, even if more in depth analysis are needed to evaluate the benefits at that scale.
+
+![Perplexity RoPE / MapWM OpenWeb](openweb.png)
+*Figure 6: MapWM scale to 
