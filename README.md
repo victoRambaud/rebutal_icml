@@ -23,7 +23,7 @@ MapWM shows near perfect length and depth generalization, while RoPE performance
 *Figure 5: MapWM generalize to unseen depth and length*
 
 ## 2. MapFormer scale to OpenWeb scale trainings
-We used the nanoGPT codebase to train a 12 layer, 8 heads of size 64 transformer, RoPE as baseline, and compare it with our MapFormerWM implementation. The following results demonstrate that MapFormers do scale to large-scale datasets and multi-layer setting, even if more in depth analysis are needed to evaluate the benefits at that scale.
+We used the nanoGPT codebase to train a 12 layer, 8 heads of size 64 transformer, RoPE as baseline, and compare it with our MapFormerWM implementation. The following results demonstrate that MapFormers do scale to large-scale datasets and multi-layer setting, even if more in depth analysis are needed to evaluate the benefits at that scale, and optimize the model's initialization
 
 ![Perplexity RoPE / MapWM OpenWeb](openweb.png)
-*Figure 6: MapWM scale to 
+*Figure 6: MapWM scale to large scale datasets and show comparable performances
